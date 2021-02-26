@@ -138,12 +138,18 @@ Vegetariana
 Bambino
 Bari
 Africana\n""")
-    while True:
+
+    while exit != True:
         input_order = str(input("Select a pizza to view the ingredients? ")).lower().replace(" ", "")
 
         if input_order in pizzas:
             order = PizzaOrder.get_pizza(input_order)
             print("This pizza contains the following ingredients: {}".format(ListToStr(order.get_ingredient())))
-            break
+            exit_selection = str(input("Do you want to lookup an other pizza? Y/N ")).lower().replace(" ", "")
+            if exit_selection == "n":
+                exit = True
+                break
+            else:
+                pass
         else:
             print("Sadley that pizza isn't on our menu! Try again with something on our menu! ")
