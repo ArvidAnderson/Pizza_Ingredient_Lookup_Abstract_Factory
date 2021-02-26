@@ -183,7 +183,6 @@ class PizzaOrder:
 def pizza_run_gui(input_order):
     if input_order.lower() in pizzas:
         order = PizzaOrder.get_pizza(input_order)
-        print("This pizza contains the following ingredients: {}".format(ListToStr(order.get_ingredient())))
-        return ListToStr(order.get_ingredient())
+        return True, ListToStr(order.get_ingredient())
     else:
-        print("Pizza not in pizzas list")
+        return False, "That pizza is not on our menu!"
