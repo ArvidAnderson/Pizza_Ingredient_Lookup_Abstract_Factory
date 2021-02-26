@@ -66,6 +66,7 @@ def main():
                 window['-OUTPUT-'].update(text_color='Red')
                 window['-OUTPUT-'].update(saved_ingredient[1])
         if event == 'Show Menu':
+            window.close()
             menu()
     window.close()
 
