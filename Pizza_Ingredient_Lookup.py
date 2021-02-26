@@ -117,39 +117,11 @@ class PizzaOrder:
         PizzaToCall = eval(PizzaType.capitalize() + "()")
         return PizzaToCall
 
-if __name__ == "__main__":
-    print("""Pizzeria la Arvid - Our Menu
-Vesuvio
-Cacciatore
-Pescatore
-Marinara
-Tomaso
-Peperone
-Margherita
-Capricciosa
-Calzone
-Riviera
-La maffia
-Mama Mia
-Pranzo
-Dennisso
-Hawaii
-Vegetariana
-Bambino
-Bari
-Africana\n""")
 
-    while exit != True:
-        input_order = str(input("Select a pizza to view the ingredients? ")).lower().replace(" ", "")
-
-        if input_order in pizzas:
-            order = PizzaOrder.get_pizza(input_order)
-            print("This pizza contains the following ingredients: {}".format(ListToStr(order.get_ingredient())))
-            exit_selection = str(input("Do you want to lookup an other pizza? Y/N ")).lower().replace(" ", "")
-            if exit_selection == "n":
-                exit = True
-                break
-            else:
-                pass
-        else:
-            print("Sadley that pizza isn't on our menu! Try again with something on our menu! ")
+def pizza_run_gui(input_order):
+    if input_order.lower() in pizzas:
+        order = PizzaOrder.get_pizza(input_order)
+        print("This pizza contains the following ingredients: {}".format(ListToStr(order.get_ingredient())))
+        return ListToStr(order.get_ingredient())
+    else:
+        print("Pizza not in pizzas list")
