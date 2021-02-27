@@ -12,7 +12,7 @@ This program is built using **PySimpleGUI** and compiled to an exe using **PySim
    This file includes all the backend of the gui. (Abstract Factory
    Pattern in here)
 
-# Releases
+# EXE Files
 Using the **PySimpleGUI-exemaker** i've compiled the program to an exe, you can find the exe under the releases page.
  
 - [Releases Here](https://github.com/ArvidAnderson/Pizza-Ingredient-Lookup/releases)
