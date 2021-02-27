@@ -17,7 +17,7 @@ class Pizza(ABC):
 # Pizzas
 class Vesuvio(Pizza):
     def __init__(self):
-        self.ingredients = ["Tomat", "Ost", "Skinka"]
+        self.ingredients = ["Tomato", "Cheese", "Ham"]
 
     def get_ingredient(self):
         return self.ingredients
@@ -25,7 +25,7 @@ class Vesuvio(Pizza):
 
 class Cacciatore(Pizza):
     def __init__(self):
-        self.ingredients = ["Tomat", "Ost", "Salami"]
+        self.ingredients = ["Tomato", "Cheese", "Ham"]
 
     def get_ingredient(self):
         return self.ingredients
@@ -33,7 +33,7 @@ class Cacciatore(Pizza):
 
 class Pescatore(Pizza):
     def __init__(self):
-        self.ingredients = ["Tomat", "Ost", "Tonfisk"]
+        self.ingredients = ["Tomato", "Cheese", "Tuna"]
 
     def get_ingredient(self):
         return self.ingredients
@@ -41,7 +41,7 @@ class Pescatore(Pizza):
 
 class Marinara(Pizza):
     def __init__(self):
-        self.ingredients = ["Tomat", "Ost", "Musslor", "Räkor"]
+        self.ingredients = ["Tomato", "Cheese", "Mussels", "Shrimps"]
 
     def get_ingredient(self):
         return self.ingredients
@@ -49,7 +49,7 @@ class Marinara(Pizza):
 
 class Tomaso(Pizza):
     def __init__(self):
-        self.ingredients = ["Tomat", "Ost", "Skinka", "Räkor"]
+        self.ingredients = ["Tomato", "Cheese", "Ham", "Shrimps"]
 
     def get_ingredient(self):
         return self.ingredients
@@ -57,7 +57,7 @@ class Tomaso(Pizza):
 
 class Peperone(Pizza):
     def __init__(self):
-        self.ingredients = ["Tomat", "Ost", "Paprika", "Oliver"]
+        self.ingredients = ["Tomato", "Cheese", "Paprika", "Olives"]
 
     def get_ingredient(self):
         return self.ingredients
@@ -65,7 +65,7 @@ class Peperone(Pizza):
 
 class Margherita(Pizza):
     def __init__(self):
-        self.ingredients = ["Tomat", "Ost"]
+        self.ingredients = ["Tomato", "Cheese"]
 
     def get_ingredient(self):
         return self.ingredients
@@ -73,7 +73,7 @@ class Margherita(Pizza):
 
 class Capricciosa(Pizza):
     def __init__(self):
-        self.ingredients = ["Tomat", "Ost", "Skinka", "Champinjoner"]
+        self.ingredients = ["Tomato", "Cheese", "Ham", "Mushrooms"]
 
     def get_ingredient(self):
         return self.ingredients
@@ -81,16 +81,14 @@ class Capricciosa(Pizza):
 
 class Calzone(Pizza):
     def __init__(self):
-        self.ingredients = ["Tomat", "Ost", "Skinka"]
-        self.inbakad = True
+        self.ingredients = ["Tomato", "Cheese", "Ham"]
 
     def get_ingredient(self):
-        return self.ingredients, self.inbakad
-
+        return self.ingredients
 
 class Riviera(Pizza):
     def __init__(self):
-        self.ingredients = ["Tomat", "Ost", "Tonfisk", "Räkor"]
+        self.ingredients = ["Tomato", "Cheese", "Tuna", "Shrimps"]
 
     def get_ingredient(self):
         return self.ingredients
@@ -98,7 +96,7 @@ class Riviera(Pizza):
 
 class Lamaffia(Pizza):
     def __init__(self):
-        self.ingredients = ["Tomat", "Ost", "Bacon", "Lök", "Cayennepeppar"]
+        self.ingredients = ["Tomato", "Cheese", "Bacon", "Onions", "Cayenne pepper"]
 
     def get_ingredient(self):
         return self.ingredients
@@ -106,7 +104,7 @@ class Lamaffia(Pizza):
 
 class Mamamia(Pizza):
     def __init__(self):
-        self.ingredients = ["Tomat", "Ost", "Köttfärs"]
+        self.ingredients = ["Tomato", "Cheese", "Ground beef"]
 
     def get_ingredient(self):
         return self.ingredients
@@ -114,7 +112,7 @@ class Mamamia(Pizza):
 
 class Pranzo(Pizza):
     def __init__(self):
-        self.ingredients = ["Tomat", "Ost", "Bacon", "Ägg"]
+        self.ingredients = ["Tomato", "Cheese", "Bacon", "Egg"]
 
     def get_ingredient(self):
         return self.ingredients
@@ -122,7 +120,7 @@ class Pranzo(Pizza):
 
 class Dennisso(Pizza):
     def __init__(self):
-        self.ingredients = ["Tomat", "Ost", "Champinjoner", "Räkor"]
+        self.ingredients = ["Tomato", "Cheese", "Mushrooms", "Shrimps"]
 
     def get_ingredient(self):
         return self.ingredients
@@ -130,7 +128,7 @@ class Dennisso(Pizza):
 
 class Hawaii(Pizza):
     def __init__(self):
-        self.ingredients = ["Tomat", "Ost", "Skinka", "Ananas"]
+        self.ingredients = ["Tomato", "Cheese", "Ham", "Pineapple"]
 
     def get_ingredient(self):
         return self.ingredients
@@ -138,7 +136,7 @@ class Hawaii(Pizza):
 
 class Vegetariana(Pizza):
     def __init__(self):
-        self.ingredients = ["Tomat", "Ost", "Champinjoner", "Oliver", "Paprika", "Lök"]
+        self.ingredients = ["Tomato", "Cheese", "Mushrooms", "Olives", "Paprika", "Onions"]
 
     def get_ingredient(self):
         return self.ingredients
@@ -146,7 +144,7 @@ class Vegetariana(Pizza):
 
 class Bambino(Pizza):
     def __init__(self):
-        self.ingredients = ["Tomat", "Ost", "Skinka", "Champinjoner", "Ananas"]
+        self.ingredients = ["Tomato", "Cheese", "Ham", "Mushrooms", "Pineapples"]
 
     def get_ingredient(self):
         return self.ingredients
@@ -154,7 +152,7 @@ class Bambino(Pizza):
 
 class Bari(Pizza):
     def __init__(self):
-        self.ingredients = ["Tomat", "Ost", "Skinka", "Tonfisk"]
+        self.ingredients = ["Tomato", "Cheese", "Ham", "Tuna"]
 
     def get_ingredient(self):
         return self.ingredients
@@ -162,7 +160,7 @@ class Bari(Pizza):
 
 class Africana(Pizza):
     def __init__(self):
-        self.ingredients = ["Tomat", "Ost", "Banan", "Ananas", "Curry"]
+        self.ingredients = ["Tomato", "Cheese", "Banana", "Pineapples", "Curry"]
 
     def get_ingredient(self):
         return self.ingredients

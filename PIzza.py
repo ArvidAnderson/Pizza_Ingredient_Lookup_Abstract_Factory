@@ -46,12 +46,12 @@ def main():
 
     layout = [[sg.Text('Pizza Ingredient Lookup')],
               [sg.InputText()],
-              [sg.Text(size=(40, 1), font='Courier 20', key='-OUTPUT-')],
-              [sg.Submit('Lookup'), sg.Button('Show Menu'), sg.Button('Exit')]]
+              [sg.Text(size=(50, 1), font='Courier 14', key='-OUTPUT-')],
+              [sg.Submit('Lookup', size=(8, 0)), sg.Button('Show Menu', size=(12, 0)), sg.Button('Exit', size=(4, 0))]]
 
-    window = sg.Window('Pizzeria Los Arvid', layout, finalize=True, no_titlebar=True, grab_anywhere=True,
+    window = sg.Window('Pizza Ingredient Lookup', layout, finalize=True, no_titlebar=False, grab_anywhere=False,
                        border_depth=4,
-                       size=(600, 200), font='Courier 25')
+                       size=(600, 200), font='Courier 20', icon='icon.ico')
     while True:  # Event Loop
         event, values = window.read()
         if event == sg.WIN_CLOSED or event == 'Exit':
