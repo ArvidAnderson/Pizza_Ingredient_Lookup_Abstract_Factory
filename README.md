@@ -1,6 +1,6 @@
 # Pizza Ingredient Lookup
 
-This program is built using **PySimpleGUI** and compiled to an exe using **pysimplegui-exemaker**. The program is following an Abstract Factory Pattern.
+This program is built using **PySimpleGUI** and compiled to an exe using **PySimpleGUI-exemaker**. The program is following an Abstract Factory Pattern.
 
 # Python Files
 
