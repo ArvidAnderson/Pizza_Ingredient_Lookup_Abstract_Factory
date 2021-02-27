@@ -49,7 +49,7 @@ def main():
               [sg.Text(size=(50, 1), font='Courier 14', key='-OUTPUT-')],
               [sg.Submit('Lookup', size=(8, 0)), sg.Button('Show Menu', size=(12, 0)), sg.Button('Exit', size=(4, 0))]]
 
-    window = sg.Window('Pizza Ingredient Lookup', layout, finalize=True, no_titlebar=False, grab_anywhere=False,
+    window = sg.Window('', layout, finalize=True, no_titlebar=False, grab_anywhere=False,
                        border_depth=4,
                        size=(600, 200), font='Courier 20', icon='icon.ico')
     while True:  # Event Loop
