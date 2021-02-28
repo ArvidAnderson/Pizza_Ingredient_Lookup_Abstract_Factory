@@ -18,6 +18,6 @@ Using the **PySimpleGUI-exemaker** i've compiled the program to an exe, you can 
 - **[Releases Here](https://github.com/ArvidAnderson/Pizza-Ingredient-Lookup/releases)**
 # Abstract Factory Pattern
 
-The abstract factory pattern provides a way to encapsulate a group of individual factories that have a common theme without specifying their concrete classes.
+The  **[abstract factory pattern](https://en.wikipedia.org/wiki/Abstract_factory_pattern)** provides a way to encapsulate a group of individual factories that have a common theme without specifying their concrete classes.
 
 ![Diagram of the pattern](https://github.com/ArvidAnderson/Pizza_Ingredient_Lookup_Abstract_Factory/blob/main/sketch.png?raw=true)
