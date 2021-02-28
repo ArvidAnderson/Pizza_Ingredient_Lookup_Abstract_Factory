@@ -8,7 +8,7 @@ This program is built using **PySimpleGUI** and compiled to an exe using **PySim
    which is where the gui is located, the program also runs itself from
    this file 
    
- -  **[Pizza_Ingredient_Lookup.py**](https://github.com/ArvidAnderson/Pizza-Ingredient-Lookup/blob/main/Pizza_Ingredient_Lookup.py)**
+ -  **[Pizza_Ingredient_Lookup.py](https://github.com/ArvidAnderson/Pizza-Ingredient-Lookup/blob/main/Pizza_Ingredient_Lookup.py)**
    This file includes all the backend of the gui. (Abstract Factory
    Pattern in here)
 
